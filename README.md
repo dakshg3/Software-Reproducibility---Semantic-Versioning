@@ -1,7 +1,7 @@
 # Dockerfile Reproducibility Analysis and Automation
 
 ## Project Overview
-This project focuses on analyzing the semantic variations of Dockerfiles for MP2 to ensure bitwise reproducibility across Ubuntu versions. The project involves error classification, evaluation of package managers, and the use of LLM-assisted automation to build and fix Dockerfiles.
+This project focuses on analyzing the semantic variations of Reproducible Articles (Dockerfiles) to ensure bitwise reproducibility across Ubuntu versions. The project involves error classification, evaluation of package managers, and the use of LLM-assisted automation to build and fix Dockerfiles.
 
 ## Key Objectives
 1. **Analyze Reproducibility**: Assess how reproducible Dockerfiles are across Ubuntu versions, identifying common challenges and errors.
