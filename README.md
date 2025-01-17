@@ -128,5 +128,5 @@ python analytics_v3.py
 ```
 
 ## Contact
-For questions or contributions, please contact Daksh Gandhi at [your_email@example.com].
+For questions or contributions, please contact Daksh Gandhi at dakshg3@illinois.edu .
 
