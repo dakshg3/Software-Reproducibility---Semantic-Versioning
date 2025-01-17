@@ -1,7 +1,7 @@
 # Dockerfile Reproducibility Analysis and Automation
 
 ## Project Overview
-This project focuses on analyzing the semantic variations of Reproducible Articles (Dockerfiles) to ensure bitwise reproducibility across Ubuntu versions. The project involves error classification, evaluation of package managers, and the use of LLM-assisted automation to build and fix Dockerfiles.
+This project focuses on analyzing the semantic variations of Dockerfiles for MP2 to ensure bitwise reproducibility across Ubuntu versions. The project involves error classification, evaluation of package managers, and the use of LLM-assisted automation to build and fix Dockerfiles.
 
 ## Key Objectives
 1. **Analyze Reproducibility**: Assess how reproducible Dockerfiles are across Ubuntu versions, identifying common challenges and errors.
@@ -36,13 +36,33 @@ The following metrics were calculated and visualized:
    - Automatic Reproducibility
    - Reproducibility with Effort
 
-2. **Graphs**:
-   - Average Pass Percentage vs. Ubuntu Version.
-   - Categorized Counts of Automatic Reproducible, Reproducible with Effort, and Non-Reproducible per Ubuntu Version.
-   - Top 5 Error Categories with their occurrence counts.
-   - Average Pass Percentage (PIP vs. apt-get).
-   - Counts of Articles per Reproducibility Category per Ubuntu Version (PIP vs. apt-get).
-   - Reproducibility Trends for Different Ubuntu Versions.
+2. **Graphs and Findings**:
+
+### Graph 1: Average Pass Percentage vs. Ubuntu Version
+![Graph 1](./Figure_1.png)
+- Observed a significant drop of 16.7% in reproducibility when switching to Ubuntu 18.04.
+- Another major drop of 16.5% occurred with Ubuntu 22.04.
+- Pass percentage includes both Automatic Reproducibility and Reproducibility with Effort.
+
+### Graph 2: Reproducibility Categories per Ubuntu Version
+![Graph 2](./Figure_5.png)
+- Visualizes counts of articles categorized as Automatic Reproducible, Reproducible with Effort, and Non-Reproducible for each Ubuntu version.
+
+### Graph 3: Reproducibility Data per Base Ubuntu Version
+![Graph 3](./Figure_6.png)
+- Shows reproducibility trends for different base Ubuntu versions.
+
+### Graph 4: Top 5 Error Categories
+![Graph 4](./Figure_3.png)
+- Highlights the most common errors, including outdated dependencies (Java 7, Python 2), build failures, and environment-specific issues like "externally managed environment."
+
+### Graph 5: Average Pass Percentage (PIP vs. apt-get)
+![Graph 5](./Figure_2.png)
+- apt-get shows better reproducibility due to fewer issues with Python 2 dependency breaking on newer Ubuntu versions.
+
+### Graph 6: Reproducibility Trends for Different Package Managers
+![Graph 6](./Figure_4.png)
+- Visualizes the impact of different package managers (PIP vs. apt-get) across reproducibility categories.
 
 ## Key Findings
 1. **Reproducibility Trends**:
@@ -77,6 +97,9 @@ A script was developed to:
 - **Dataset**: [Spreadsheet with collected data](https://docs.google.com/spreadsheets/d/12XfzmpOmKiBWzqgWf6wBQh9TpRQa2p1487wZYMQ-kn0/edit?usp=sharing).
 - **Graphs**: Visual representations of the findings.
 
+## Link to Final Report
+**Final Report**: [Read the Full Report](./final-report.md)
+
 ## Discussion Points
 1. **Reproducibility**: Highlighted significant drops in reproducibility with Ubuntu 18.04 and 22.04.
 2. **Errors**: Categorized and visualized common errors, offering insights into reproducibility challenges.
@@ -105,5 +128,5 @@ python analytics_v3.py
 ```
 
 ## Contact
-For questions or contributions, please contact Daksh Gandhi at dakshg3@illinois.edu 
+For questions or contributions, please contact Daksh Gandhi at [your_email@example.com].
 
